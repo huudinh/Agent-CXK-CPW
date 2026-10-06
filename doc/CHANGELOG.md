@@ -1,5 +1,27 @@
 # CHANGELOG — CXK-CPW
 
+## v1.5 — 06/10/2026 · Vá lỗi bộ não không vừa ô Instructions của ChatGPT
+
+**Lỗi phát hiện khi viết hướng dẫn cho người mới:** `SYSTEM-PROMPT.md` dài **14.541 ký tự**, nhưng ô **Instructions của ChatGPT Custom GPT chỉ nhận 8.000 ký tự**. Ai cài theo `doc/01-cai-dat.md` bản trước sẽ bị **cắt mất nửa sau** — mất trọn §10 guardrails pháp lý, §14 định dạng đầu ra và §16 Rules — mà không có cảnh báo nào.
+
+**Thêm `SYSTEM-PROMPT-NGAN.md`** — bản rút gọn **6.523 ký tự** (dư 1.477 ký tự so với hạn mức). Giữ nguyên mọi luật không được phá: định danh thương hiệu · bảng từ cấm · chống chỉ định · không bịa số liệu/giá/tên bác sĩ · luật hình ảnh · HITL · khối người dùng không chuyên · định dạng đầu ra. Dòng đầu ra lệnh cho Agent **đọc `SYSTEM-PROMPT.md` trong Knowledge** để lấy chi tiết đầy đủ.
+
+**Cách cài theo từng nền tảng — đã phân biệt rõ**
+
+| Nền tảng | Dán vào Instructions | Upload lên Knowledge |
+|---|---|---|
+| **ChatGPT** Custom GPT | `SYSTEM-PROMPT-NGAN.md` (6.523) | 6 file `knowledge/` + xlsx **+ `SYSTEM-PROMPT.md`** |
+| **Gemini** Gems | `SYSTEM-PROMPT.md` (bản đầy đủ) | 6 file `knowledge/` + xlsx |
+| **Claude** Projects | `SYSTEM-PROMPT.md` (bản đầy đủ) | 6 file `knowledge/` + xlsx |
+
+Gemini và Claude nhận được instructions dài nên **dán bản đầy đủ cho chất lượng cao hơn** — instructions luôn nằm trong ngữ cảnh, còn Knowledge thì phải tra mới thấy.
+
+**Thay đổi kèm theo**
+- `doc/01-cai-dat.md` — mục ChatGPT ghi rõ cảnh báo giới hạn 8.000 ký tự và đổi sang bản ngắn.
+- `README.md` — bảng tài liệu ghi số ký tự của cả hai bản.
+
+---
+
 ## v1.4 — 06/10/2026 · Mở cho người không chuyên
 
 Trước bản này, Agent chỉ chạy đúng khi người dùng khai báo `mode · tuyến phễu · định dạng · đối tượng`. Nhân sự không làm marketing chuyên không biết những từ đó, nên hoặc không dùng được, hoặc dùng sai rồi nhận output lệch.

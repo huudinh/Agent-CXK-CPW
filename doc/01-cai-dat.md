@@ -9,10 +9,12 @@
 2. **Ô Chỉ dẫn:** dán toàn bộ khối giữa hai vạch ▼▲ trong [`SYSTEM-PROMPT.md`](../SYSTEM-PROMPT.md).
 3. **Tri thức:** upload 6 file `.md` trong [`knowledge/`](../knowledge/) + `templates/TEMPLATE_LICH_CONTENT.xlsx`.
 
-## ChatGPT (Custom GPT)
+## ChatGPT (Custom GPT) — ⚠ dùng BẢN NGẮN
+Ô **Instructions** của Custom GPT giới hạn **8.000 ký tự**, mà `SYSTEM-PROMPT.md` dài **14.541 ký tự** → dán vào sẽ **bị cắt mất nửa sau**, mất toàn bộ phần guardrails pháp lý và định dạng đầu ra.
+
 1. Create a GPT → tab *Configure*.
-2. **Instructions:** dán khối ▼▲.
-3. **Knowledge:** upload 6 file `.md` + file xlsx.
+2. **Instructions:** dán khối ▼▲ của [`SYSTEM-PROMPT-NGAN.md`](../SYSTEM-PROMPT-NGAN.md) (**6.523 ký tự**).
+3. **Knowledge:** upload 6 file `.md` + file xlsx **+ thêm cả `SYSTEM-PROMPT.md`** — bản ngắn ra lệnh cho Agent đọc file này để lấy chi tiết đầy đủ.
 
 ## Claude (Project)
 1. Create Project → `CXK-CPW Ads Writer`.

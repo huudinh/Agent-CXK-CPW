@@ -8,6 +8,18 @@ Theo công thức HCI **R·M·K·W·O**. Bộ não ([`SYSTEM-PROMPT.md`](SYSTEM-
 
 ---
 
+## 👉 Chưa biết bắt đầu từ đâu?
+
+### **[MỞ HƯỚNG DẪN CHO NGƯỜI MỚI →](https://claude.ai/artifact/D2XdD2d63tWhT4St64AgCg)**
+
+Trang hướng dẫn 5 bước, dành cho người **chưa từng dùng GitHub** và **chưa từng tự cài AI Agent**: tải bộ file (một nút) → hiểu file nào để làm gì → cài trên ChatGPT / Gemini / Claude → kiểm tra cài đúng chưa → 10 câu lệnh đầu tiên bấm copy là dùng được.
+
+Nội dung của cả 7 file đã nhúng sẵn trong trang, nên **không tải được GitHub vẫn cài được**.
+
+> ⚠️ Link này là trang riêng tư. Người ngoài mở sẽ báo không có quyền — chủ sở hữu phải bấm **Share** trên trang để cấp quyền trước.
+
+---
+
 ## Định danh thương hiệu — gọi đúng tên
 
 Thương hiệu là **CƠ XƯƠNG KHỚP – WELLNESS**. Dạng ngắn trong câu: **Wellness**.
@@ -98,6 +110,8 @@ Nỗi sợ phải được gọi tên **ngay trong hook, bằng chính lời kh�
 
 ## Quick start (4 bước)
 
+> Người mới nên dùng [**trang hướng dẫn từng bước**](https://claude.ai/artifact/D2XdD2d63tWhT4St64AgCg) thay cho mục này.
+
 1. Tạo 1 Project / GPT / Gem mới.
 2. **Instructions:** dán toàn bộ khối giữa hai vạch ▼▲ trong [`SYSTEM-PROMPT.md`](SYSTEM-PROMPT.md).
 3. **Knowledge:** upload 6 file `.md` trong [`knowledge/`](knowledge/) + [`templates/TEMPLATE_LICH_CONTENT.xlsx`](templates/).
@@ -139,7 +153,9 @@ Cộng cổng chặn: **không còn từ cấm nào · mọi con số có nguồ
 
 | File | Nội dung | Trạng thái |
 |---|---|---|
-| [SYSTEM-PROMPT.md](SYSTEM-PROMPT.md) | Bộ não Agent — 17 mục, dán vào Instructions | ✅ |
+| [**Trang hướng dẫn cho người mới**](https://claude.ai/artifact/D2XdD2d63tWhT4St64AgCg) | 5 bước từ tải file đến 10 câu lệnh đầu tiên · nhúng sẵn nội dung 7 file · nút copy | 🔒 cần Share |
+| [SYSTEM-PROMPT.md](SYSTEM-PROMPT.md) | Bộ não Agent — 17 mục, dán vào Instructions · **14.541 ký tự** | ✅ |
+| [SYSTEM-PROMPT-NGAN.md](SYSTEM-PROMPT-NGAN.md) | Bản ngắn **6.523 ký tự** — chỉ dùng cho **ChatGPT Custom GPT** (ô Instructions giới hạn 8.000 ký tự) | ✅ |
 | [knowledge/cxk-rao-phap-ly.md](knowledge/cxk-rao-phap-ly.md) | Lớp pháp lý QC y tế: từ cấm → từ đúng · disclaimer · HITL | ✅ |
 | [knowledge/cxk-ho-so-dich-vu.md](knowledge/cxk-ho-so-dich-vu.md) | Phác đồ Hiệu Quả Kép · USP · số liệu · 3 gói · FAQ · chống chỉ định | ✅ |
 | [knowledge/cxk-chan-dung-hanh-trinh.md](knowledge/cxk-chan-dung-hanh-trinh.md) | 2 chân dung + phễu 6 giai đoạn + trục góc content | ✅ |
