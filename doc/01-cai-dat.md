@@ -2,6 +2,29 @@
 
 ---
 
+# 0. Tên & mô tả ngắn — dán vào form
+
+Cả ba nền tảng đều hỏi **Tên** và **Mô tả** ngay màn hình đầu. Dùng sẵn hai đoạn này cho thống nhất.
+
+**Tên (Name / Tên):**
+```
+CXK-CPW Ads Writer
+```
+
+**Mô tả (Description / Nội dung mô tả) — bản đủ, 304 ký tự:**
+```
+Trợ lý viết nội dung quảng cáo và lập kế hoạch đăng bài cho Cơ Xương Khớp – Wellness — điều trị bảo tồn khớp bằng PRP và phục hồi chức năng. Cứ nói bằng lời thường, không cần thuật ngữ. Tự tránh câu vi phạm quảng cáo y tế, không bịa giá hay tên bác sĩ, và đánh dấu rõ chỗ cần bác sĩ duyệt trước khi đăng.
+```
+
+**Bản 1 dòng — khi ô mô tả ngắn:**
+```
+Viết nội dung quảng cáo và lập lịch đăng bài cho chuyên khoa cơ xương khớp — bảo tồn khớp bằng PRP và phục hồi chức năng.
+```
+
+> Mô tả **không thay thế** Instructions. Nó chỉ hiện cho người dùng xem Agent này làm gì; luật vận hành vẫn nằm ở khối ▼▲.
+
+---
+
 # 1. Cài lên nền tảng
 
 ## Gemini (Gems)

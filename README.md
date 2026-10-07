@@ -112,7 +112,7 @@ Nỗi sợ phải được gọi tên **ngay trong hook, bằng chính lời kh�
 
 > Người mới nên dùng [**trang hướng dẫn từng bước**](https://claude.ai/artifact/D2XdD2d63tWhT4St64AgCg) thay cho mục này.
 
-1. Tạo 1 Project / GPT / Gem mới.
+1. Tạo 1 Project / GPT / Gem mới. **Tên** và **mô tả ngắn** để dán vào form: xem [`doc/01-cai-dat.md` §0](doc/01-cai-dat.md).
 2. **Instructions:** dán toàn bộ khối giữa hai vạch ▼▲ trong [`SYSTEM-PROMPT.md`](SYSTEM-PROMPT.md).
 3. **Knowledge:** upload 6 file `.md` trong [`knowledge/`](knowledge/) + [`templates/TEMPLATE_LICH_CONTENT.xlsx`](templates/).
 4. Gọi 1 trong 4 chế độ: `VIET` · `BATCH` · `LICH` · `HOOK`.

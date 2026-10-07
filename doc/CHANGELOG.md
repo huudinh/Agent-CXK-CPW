@@ -1,5 +1,21 @@
 # CHANGELOG — CXK-CPW
 
+## v1.6 — 07/10/2026 · Bổ sung tên & mô tả ngắn cho form
+
+**Thiếu sót phát hiện khi cài thật:** màn hình tạo mới của cả ba nền tảng đều có ô **Mô tả** (Gemini: *Nội dung mô tả* · ChatGPT: *Description* · Claude: mô tả project), nhưng gói không có sẵn đoạn nào để dán — mỗi người cài sẽ tự viết một kiểu.
+
+**Thêm `doc/01-cai-dat.md` §0 — Tên & mô tả ngắn**
+- **Tên:** `CXK-CPW Ads Writer` (18 ký tự).
+- **Mô tả bản đủ** (304 ký tự) — nêu đúng 4 ý: làm gì · cho thương hiệu nào · nói bằng lời thường được · tự tránh câu vi phạm quảng cáo y tế và đánh dấu chỗ cần bác sĩ duyệt.
+- **Mô tả bản 1 dòng** (121 ký tự) cho ô ngắn.
+- Ghi rõ **mô tả không thay thế Instructions** — tránh người mới tưởng dán mô tả là đủ.
+
+**Kèm theo**
+- `README.md` — Quick start bước 1 trỏ sang §0.
+- Trang hướng dẫn cho người mới — Bước 3 thêm khối 3 thẻ copy (tên · mô tả đủ · mô tả 1 dòng) đặt trên bảng nền tảng; cả ba tab thêm bước điền ô mô tả.
+
+---
+
 ## v1.5 — 06/10/2026 · Vá lỗi bộ não không vừa ô Instructions của ChatGPT
 
 **Lỗi phát hiện khi viết hướng dẫn cho người mới:** `SYSTEM-PROMPT.md` dài **14.541 ký tự**, nhưng ô **Instructions của ChatGPT Custom GPT chỉ nhận 8.000 ký tự**. Ai cài theo `doc/01-cai-dat.md` bản trước sẽ bị **cắt mất nửa sau** — mất trọn §10 guardrails pháp lý, §14 định dạng đầu ra và §16 Rules — mà không có cảnh báo nào.
